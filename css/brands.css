@@ -1,0 +1,72 @@
+:root {
+  --darkGold: #88543e;
+  --brown: #311e19;
+  --goldYellow: #eeb256;
+  --beige: #f0efed;
+  --lightBrown: #90604c;
+  --grey: #e2e0df;
+}
+
+#brands {
+ padding-top: 46px;
+ padding-bottom: 58px;
+}
+#brands h1{
+    margin-bottom: 31px;
+}
+#brands .boxes {
+  display: flex;
+  flex-direction: column;
+}
+#brands .boxes .top {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+#brands .boxes .top .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 7px;
+  border:2px solid var(--grey);
+  margin-right: 10px;
+  background-color: #e5e5e534;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+#brands .boxes .top .box .number{
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+#brands .boxes .top .box:first-of-type{
+    border: 2px solid #90604C;
+    background: #90604C1A;
+}
+#brands .boxes .top .box:first-of-type .number{
+    background: #BEB0AA;
+    color: #fff;
+}
+#brands .boxes .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#brands .boxes .bottom img{
+    width: 192px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:768px) {
+    #brands{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}

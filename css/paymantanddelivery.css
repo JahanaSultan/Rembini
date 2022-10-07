@@ -1,0 +1,222 @@
+:root {
+  --darkGold: #88543e;
+  --brown: #311e19;
+  --goldYellow: #eeb256;
+  --beige: #f0efed;
+  --lightBrown: #90604c;
+  --grey: #e2e0df;
+}
+h1 {
+  font-size: 34px;
+  color: var(--brown);
+}
+/* ----------------------DELIVERORDERSECTION------------------------- */
+
+#deliverorder h1 {
+  margin: 43px 0;
+}
+#deliverorder .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#deliverorder .cards .card {
+  min-height: 404px;
+  margin-bottom: 56px;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#deliverorder .cards .card .img-div {
+  width: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15));
+}
+#deliverorder .cards .card:nth-of-type(1) .img-div {
+  background-image: url(../img/deliverandpaymant/img1.png);
+}
+#deliverorder .cards .card:nth-of-type(2) .img-div {
+  background-image: url(../img/deliverandpaymant/img2.png);
+}
+#deliverorder .cards .card:nth-of-type(3) .img-div {
+  background-image: url(../img/deliverandpaymant/img3.png);
+}
+#deliverorder .cards .card h2 {
+  font-size: 21px;
+  font-family: "Merriweather", sans-serif;
+  color: var(--brown);
+}
+#deliverorder .cards .card p {
+  color: var(--brown);
+  opacity: 0.5;
+}
+
+#deliverorder .cards .card .cardfooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+#deliverorder .cards .card .cardfooter span {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--brown);
+}
+#deliverorder .cards .card .cardfooter .left span:nth-of-type(2),
+#deliverorder .cards .card .cardfooter .left span:nth-of-type(4) {
+  color: var(--goldYellow);
+}
+#deliverorder .cards .card .cardfooter .right span:nth-of-type(2) {
+  opacity: 0.5;
+}
+/* -----------X----------DELIVERORDERSECTION----------X-------------- */
+/* ----------------------PAYMANTSECTION------------------------------ */
+#paymants {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #ededed;
+}
+#paymants .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#paymants .cards .side-card {
+  width: 49%;
+}
+#paymants .cards .side-card .paymantmetods {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 11px;
+}
+#paymants .cards .side-card .img-div {
+  display: flex;
+  margin-top: 13px;
+  flex-wrap: wrap;
+}
+#paymants .cards .side-card .box {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* -----------X----------PAYMANTSECTION---------------X-------------- */
+/* -----------X----------ORDERNUMBERSECTION-----------X-------------- */
+#ordernumber {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 129px;
+  padding-bottom: 129px;
+  align-items: baseline;
+  background-color: #e5e5e531;
+  flex-wrap: wrap;
+}
+#ordernumber .input {
+  display: flex;
+}
+#ordernumber .left {
+  width: 50%;
+  position: relative;
+}
+#ordernumber .right {
+  width: 49%;
+  position: relative;
+}
+#ordernumber img {
+  position: absolute;
+  right: 0px;
+  bottom: -100px;
+}
+#ordernumber .right .inputCard h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brown);
+  margin-bottom: 18px;
+}
+#ordernumber .right .inputCard .input{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+#ordernumber .right .inputCard .input input{ 
+ width: 49%;
+ height: 50px;
+ border: 0;
+ outline: 0;
+ border-radius: 3px;
+ background-color: #ededed;
+ padding: 17px;
+}
+#ordernumber .right .inputCard  button{
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--goldYellow);
+}
+#ordernumber .right .inputCard{
+  padding: 30px 38px;
+  background-color: #fff;
+}
+/* ----------------------ORDERNUMBERSECTION-------------------------- */
+
+/* ----------------------MEDIAQUERIES-------------------------------- */
+@media screen and (max-width: 1026px) {
+}
+@media screen and (max-width: 926px) {
+  #deliverorder .cards .card {
+    width: 49%;
+  }
+  #paymants .cards .side-card {
+    width: 100%;
+  }
+  #paymants .cards .side-card:last-child {
+    margin-top: 44px;
+  }
+  #deliverorder .cards .card {
+    margin-bottom: 0;
+  }
+  #ordernumber .left{
+    width: 100%;
+  }
+  #ordernumber .right{
+    width: 100%;
+  }
+  #ordernumber{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #ordernumber .right .inputCard .input{
+    flex-direction: column;
+  }
+  #ordernumber .right .inputCard .input input{
+    width: 100%;
+  }
+  #ordernumber .right .inputCard .input input:first-of-type{
+   margin-bottom: 10px;
+  }
+  #ordernumber .right .inputCard h4{
+    text-align: center;
+  }
+  #ordernumber .left h1{
+    margin-bottom: 31px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #deliverorder .cards .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+}
+/* ------------X---------MEDIAQUERIES-------------------X------------ */

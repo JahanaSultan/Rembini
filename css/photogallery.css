@@ -1,0 +1,43 @@
+:root {
+    --darkGold: #88543e;
+    --brown: #311e19;
+    --goldYellow: #eeb256;
+    --beige: #f0efed;
+    --lightBrown: #90604c;
+    --grey: #e2e0df;
+  }
+
+
+#photogallery{
+    padding-top:46px;
+    padding-bottom: 90px;
+    color: var(--brown);
+}
+
+#photogallery .photos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#photogallery .photos .img{
+    display: flex;
+   flex-direction: column;
+   width: 32%;
+   cursor: pointer;
+   text-align: center;
+}
+#photogallery .photos .img img{
+   width: 100%;
+   margin-top: 31px;
+   margin-bottom: 21px;
+}
+
+@media screen and (max-width:768px) {
+    #photogallery .photos .img{
+       width: 100%;
+    }   
+    #photogallery{
+        padding-top:14px;
+        padding-bottom: 56px;
+    }
+}

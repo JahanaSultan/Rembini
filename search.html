@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icn.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Rembini</title>
+</head>
+
+<body>
+    <!--------------------------------------NAVIGATION------------------------------------------>
+    <nav>
+        <!--------------------------------- TOPNAVIGATION -------------------------------------->
+        <div class="topnav padding-x">
+            <div class="leftSide">
+                <ul>
+                    <li class="control"><a href="#"><i class="fa-solid fa-angle-left"></i> Главное меню</a></li>
+                    <li><a href="paymantanddelivery.html">Оплата и доставка</a></li>
+                    <li><a href="aboutcompany.html">О магазине</a></li>
+                    <li><a href="photogallery.html">Фотогалерея</a></li>
+                    <li><a href="brands.html">Бренды</a></li>
+                </ul>
+            </div>
+            <div class="rightSide">
+                <div class="info">
+                    <div class="icon"><img src="img/telephone.svg" alt=""></div>
+                    <div class="number">
+                        <p>+375 20 555 10 99</p>
+                        <span>Пн-Пт c 9:00 до 13:00</span>
+                    </div>
+                </div>
+                <div class="login">
+                    <button class="btn"><i class="fa-solid fa-circle-user"></i> Войти</button>
+                </div>
+            </div>
+        </div>
+        <!------------------X-------------- TOPNAVIGATION ----------------X--------------------->
+        <!--------------------------------- CENTERNAVIGATION ----------------------------------->
+        <div class="center-nav padding-x">
+            <!----------------------------- MOBILE SEARCH ICON AND MODAL ----------------------->
+            <div class="searchIcon">
+                <img src="img/search.svg" alt="">
+            </div>
+            <div class="absoluteDiv">
+                <div class="input">
+                    <input type="text" placeholder="Поиск на сайте" class="site-search">
+                    <div class="search-icon"><img src="img/close.svg" alt=""></div>
+                </div>
+            </div>
+            <!-------------------------X-- MOBILE SEARCH ICON AND MODAL ----------X------------->
+            <a href="index.html">
+                <div class="logo"><img src="img/Logo.png" alt="Logo"></div>
+            </a>
+            <div class="burger">
+                <img src="img/Burger.svg" alt="">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Поиск на сайте" class="site-search">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="info1">
+                <div class="icon">
+                    <div class="circle"><img src="img/icon.svg" alt="icon"></div>
+                </div>
+                <div class="infoIn">
+                    <p>Бесплатная доставка</p>
+                    <span>по Минску и Беларуси</span>
+                </div>
+            </div>
+            <div class="info1">
+                <div class="icon">
+                    <div class="circle"><img src="img/Icon (1).svg" alt="icon"></div>
+                </div>
+                <div class="infoIn">
+                    <p>Персональная</p>
+                    <span>гравировка изделий</span>
+                </div>
+            </div>
+            
+            <div class="info1 basket" >
+                </a><div class="icon">
+                    <div class="count">0</div>
+                    <img src="img/icon (2).svg" alt="">
+                </div>
+                <div class="infoIn">
+                    <p>Корзина</p>
+                    <span>У вас 1 подарок</span>
+                </div>
+            </div>
+        </div>
+        <!------------------X-------------- CENTERNAVIGATION -------------X--------------------->
+        <!--------------------------------- BOTTOMNAVIGATION ----------------------------------->
+        <div class="bottom-nav padding-x">
+            <p><a href="#" class="category-click" data-category="Ремни"><img src="img/Ремень.svg" alt="icon"> Ремни</a>
+                <a href="#" class="category-click" data-category="Сумки"><img src="img/Чемодан.svg" alt="icon">
+                    Сумки</a>
+                <a href="#" class="category-click" data-category="Кошельки"><img src="img/Кошель.svg" alt="icon">
+                    Кошельки</a>
+                <a href="#" class="category-click" data-category="Зонты"><img src="img/zont.svg" alt="icon"> Зонты</a>
+                <a href="#" class="category-click" data-category="Рюкзаки"><img src="img/Рюкзак.svg" alt="icon">
+                    Рюкзаки</a>
+                <a href="#" class="category-click" data-category="Обложки"><img src="img/Union.svg" alt="icon">
+                    Обложки</a>
+                <a href="#" class="category-click" data-category="Аксессуары"><img src="img/Clock.svg" alt="icon">
+                    Аксессуары </a>
+                <a href="#" class="category-click" data-category="Перчатки"><img src="img/Group (1).svg" alt="icon">
+                    Перчатки</a>
+                <a href="#" class="category-click" data-category="Галстуки"><img src="img/Галс.svg" alt="icon">
+                    Галстуки</a>
+                <a href="#" class="category-click" data-category="Очки"><img src="img/Очки.svg" alt="icon"> Очки</a>
+                <a href="#" class="category-click" data-category="Чемоданы"><img src="img/Group (2).svg" alt="icon">
+                    Чемоданы</a>
+
+            </p>
+        </div>
+        <!------------------X-------------- BOTTOMNAVIGATION -------------X--------------------->
+    </nav>
+    <!-------------------X----------------- NAVIGATION---------------------X-------------------->
+    <!------------------------------------- MOBILE-BOTTOM-MENU---------------------------------->
+    <div class="mobile-bottom padding-x">
+        <div class="relative">
+            <a href="index.html">
+                <div class="icon">
+                    <img src="img/home.svg" alt="">
+                    <p>Главная</p>
+                </div>
+            </a>
+            <div class="icon" id="mobileBasket">
+
+                <div class="left">
+                    <div class="count">0</div>
+                    <img src="img/shopping.svg" alt="">
+                    <p>Корзина</p>
+                </div>
+                <div class="right">
+                    <span>3 250 р.</span>
+                    <a href="basket.html"><button class="btn">Оформить</button></a>
+                </div>
+            </div>
+            <div class="icon" id="catalog">
+                <img src="img/burgerb.svg" alt="">
+                <p>Каталог</p>
+            </div>
+
+            <div class="icon" id="bottomAccount">
+                <img src="img/account.svg" alt="">
+                <p>Аккаунт</p>
+            </div>
+
+        </div>
+        <div class="abAccount">
+            <div class="heading">
+                <h1>Вход в личный кабинет</h1>
+                <div class="close"><img src="img/accountclose.svg" alt=""></div>
+            </div>
+            <div class="main">
+                <div class="input">
+                    <input type="text" placeholder="Введите ваш телефон">
+                    <button class="btn">Войти</button>
+                </div>
+                <div class="hr">
+                    <hr>
+                    <span>или</span>
+                </div>
+                <div class="social-media">
+                    <img src="img/VContact.svg" alt="vk">
+                    <img src="img/Facebook.svg" alt="fb">
+                    <img src="img/Twitter.svg" alt="tw">
+                </div>
+                <div class="question">
+                    Впервые у нас?<a href="#" id="registerlink"> Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+        <div class="register" id="register">
+            <div class="heading">
+                <h1>Регистрация</h1>
+                <div class="close"><img src="img/accountclose.svg" alt=""></div>
+            </div>
+            <div class="main">
+                <div class="input">
+                    <input type="text" placeholder="Имя">
+                    <input type="number" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Пароль">
+                    <input type="password" placeholder="Повторите пароль">
+                    <button class="btn">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------X----------------- MOBILE-BOTTOM-MENU-------------X-------------------->
+    <!------------------------------------- MOBILE-SIDE-CATALOG--------------------------------->
+    <div class="side-catalog">
+        <div class="info">
+            <div class="icon"><img src="img/telephone.svg" alt=""></div>
+            <div class="number">
+                <p>+375 20 555 10 99</p>
+                <span>Пн-Пт c 9:00 до 13:00</span>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">Дополнительное меню</a></li>
+            <li><a href="#" class="category-click" data-category="Ремни"><img src="img/Ремень.svg" alt="icon"> Ремни <i
+                        class="fa-solid fa-angle-right"></i></a></li>
+            <li><a href="#" class="category-click" data-category="Сумки"><img src="img/Чемодан.svg" alt="icon"> Сумки <i
+                        class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Кошельки"><img src="img/Кошель.svg" alt="icon">
+                    Кошельки <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Зонты"><img src="img/zont.svg" alt="icon"> Зонты <i
+                        class="fa-solid fa-angle-right"></i></a></li>
+            <li><a href="#" class="category-click" data-category="Рюкзаки"><img src="img/Рюкзак.svg" alt="icon"> Рюкзаки
+                    <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Обложки"><img src="img/Union.svg" alt="icon"> Обложки
+                    <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Аксессуары"><img src="img/Clock.svg" alt="icon">
+                    Аксессуары <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Перчатки"><img src="img/Group (1).svg" alt="icon">
+                    Перчатки <i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a href="#" class="category-click" data-category="Галстуки"><img src="img/Галс.svg" alt="icon"> Галстуки
+                    <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li><a href="#" class="category-click" data-category="Очки"><img src="img/Очки.svg" alt="icon"> Очки <i
+                        class="fa-solid fa-angle-right"></i></a></li>
+            <li><a href="#" class="category-click"  data-category="Чемоданы"><img src="img/Group (2).svg" alt="icon"> Чемоданы <i
+                        class="fa-solid fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+    <!-------------------X----------------- MOBILE-SIDE-CATALOG-------------X------------------->
+    <!-------------------X----------------- HEADLINE------------------------X------------------->
+    <div class="headline padding-x">
+        <span>Главная</span> <i class="fa-solid fa-angle-right"></i> <span>Поиск</span>
+    </div>
+    <!-------------------X----------------- HEADLINE------------------------X------------------->
+
+
+    <div class="container">
+        <!------------------------------------- HEADING-------------------------------------------->
+        <div class="heading padding-x">
+            <div class="left">
+                <h1>
+                    Поиск по запросу:<span class="searchWord"></span>
+                </h1>
+            </div>
+            <div class="right">
+                <div class="filter">
+                    <div class="icon"><img src="img/filter/filter.svg" alt=""></div>
+                    <div class="name">
+                        <h4>Фильтр</h4>
+                        <p>Товаров: <span class="productCount"></span></p>
+                    </div>
+                    <div class="iconright"><input type="checkbox" class="toggle-switch" id="my-check" ></div>
+                </div>
+                <div class="sort">
+                    <span>Сортировка:</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <select id="sortProduct">
+                        <option value="По умолчанию">По умолчанию</option>
+                        <option value="Популярности">Популярности</option>
+                        <option value="Новинкам">Новинкам</option>
+                        <option value="Стоимость вверх">Стоимость вверх</option>
+                        <option value="Стоимость вниз">Стоимость вниз</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-------------------X----------------- HEADING------------------------X------------------->
+        <!------------------------------------- SEARCHSECTION-------------------------------------->
+        <section id="search-page" class="padding-x">
+            <div class="left" id="form">
+                <form>
+                    <div class="price">
+                        <h3>Цена, р.</h3>
+                        <div class="price-filter">
+                            <div class="from">от <input type="text" id="price-from"></div> <span class="line">-</span>
+                            <div class="to">до <input type="text" id="price-to">
+                            </div>
+                        </div>
+                        <input type="range" min="0" max="10000" id="price-range">
+                    </div>
+                    <div class="color checkbox" id="color-checkbox">
+                        <h3>Цвет</h3>
+                        <input type="checkbox" id="Темно-коричневый" value="Темно-коричневый">
+                        <label for="Темно-коричневый"><img src="img/filter/1.svg" alt=""> Темно-коричневый </label>
+                        <input type="checkbox" id="Черный" value="Черный">
+                        <label for="Черный"><img src="img/filter/2.svg" alt=""> Черный</label>
+                        <input type="checkbox" id="Синий" value="Синий">
+                        <label for="Синий"><img src="img/filter/3.svg" alt=""> Синий</label>
+                        <input type="checkbox" id="Светло-коричневый" value="Светло-коричневый">
+                        <label for="Светло-коричневый"><img src="img/filter/4.svg" alt=""> Светло-коричневый</label>
+                        <input type="checkbox" id="Черно-синий" value="Черно-синий">
+                        <label for="Черно-синий"><img src="img/filter/5.svg" alt=""> Черно-синий</label>
+                        <input type="checkbox" id="Бордовый" value="Бордовый">
+                        <label for="Бордовый"><img src="img/filter/6.svg" alt=""> Бордовый</label>
+                    </div>
+                    <div class="brand checkbox" id="brand-checkbox">
+                        <h3>Бренды</h3>
+                        <input type="checkbox" id="Versado" value="Versado">
+                        <label for="Versado">Versado</label>
+                        <input type="checkbox" id="Rembini" value="Rembini">
+                        <label for="Rembini">Rembini</label>
+                        <input type="checkbox" id="Gino Di Milano" value="Gino Di Milano">
+                        <label for="Gino Di Milano">Gino Di Milano</label>
+                        <input type="checkbox" id="Hassion" value="Hassion">
+                        <label for="Hassion">Hassion</label>
+                        <input type="checkbox" id="Albatross" value="Albatross">
+                        <label for="Albatross">Albatross</label>
+                        <span>Открыть полный список <i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="country checkbox" id="country-checkbox">
+                        <h3>Страна производитель</h3>
+                        <input type="checkbox" id="Беларусь
+                " value="Беларусь">
+                        <label for="Беларусь
+                ">Беларусь
+                        </label>
+                        <input type="checkbox" id="
+                Италия
+                " value="Италия">
+                        <label for="
+                Италия
+                ">
+                            Италия
+                        </label>
+                        <input type="checkbox" id="Россия
+                " value="Россия">
+                        <label for="Россия
+                ">Россия
+                        </label>
+                        <input type="checkbox" id="Турция" value="Турция">
+                        <label for="Турция">Турция</label>
+                        <input type="checkbox" id="Испания" value="Испания">
+                        <label for="Испания">Испания</label>
+                    </div>
+                    <div class="size checkbox" id="size-checkbox">
+                        <h3>Российский размер</h3>
+                        <div class="sides">
+                            <div class="left-side">
+                                <input type="checkbox" id="44" value="44">
+                                <label for="44">44</label>
+                                <input type="checkbox" id="46" value="46">
+                                <label for="46">46</label>
+                                <input type="checkbox" id="48" value="48">
+                                <label for="48">48</label>
+                            </div>
+                            <div class="right-side">
+                                <input type="checkbox" id="50" value="50">
+                                <label for="50">50</label>
+                                <input type="checkbox" id="52" value="52">
+                                <label for="52">52</label>
+                                <input type="checkbox" id="54" value="54">
+                                <label for="54">54</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="get-filter-result" type="button">Показать товара</button>
+                        <input type="reset" value="Очистить фильтр" id="resetFilter">
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <div class="item-cards" id="searchResult"></div>
+            </div>
+        </section>
+        <!-------------------X----------------- SEARCHSECTION------------------X------------------->
+    </div>
+
+
+
+    <!-- ----------------------------------IFRAMESECTION------------X------------------------ -->
+    <section id="iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.73292467783!2d27.577169615324216!3d53.91872168010299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf6cd83b3f43%3A0x80224da8c6dd3e18!2zUkVNQklOSSAtINCc0YPQttGB0LrQuNC1INCw0LrRgdC10YHRgdGD0LDRgNGLINC4INC_0L7QtNCw0YDQutC4!5e0!3m2!1sru!2s!4v1649488710328!5m2!1sru!2s"
+            width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- -----------------X----------------IFRAMESECTION--------------------X---------------- -->
+    <!-- ----------------------------------DELIVERANDINFOSECTION----------------------------- -->
+    <section id="deliver-and-info" class="padding-x">
+        <div class="deliver">
+            <h1>Доставка товаров по всей Беларуси</h1>
+            <p>Осуществляем доставку по Минску и всей Беларуси.</p>
+            <div class="imgDiv"><img src="img/map.svg" alt=""></div>
+        </div>
+        <div class="information">
+            <h1>Контактная информация</h1>
+            <div class="ul">
+                <ul>
+                    <li>
+                        <div class="icon1"><img src="img/INFOphone.svg" alt="phoneicon"></div>+375 29 689 98 98
+                    </li>
+                    <li>
+                        <div class="icon1"><img src="img/INFOclock.svg" alt="phoneicon"></div> Пн. – Вс.: с 10:00 до
+                        20:00
+                    </li>
+                    <li>
+                        <div class="icon1"><img src="img/INFOlocation.svg" alt="phoneicon"></div> г. Минск, ул. Веры
+                        Хоружей 6б, пав. 4Б
+                    </li>
+                    <li>
+                        <div class="icon1"><img src="img/INFOenvelop.svg" alt="phoneicon"></div> info@rembini.by
+                    </li>
+                </ul>
+            </div>
+            <span>Заказ на сайте доступен 24 часа</span>
+            <h1> Мы работаем без выходных!</h1>
+            <button>Задать вопрос</button>
+        </div>
+    </section>
+    <!-- ------------X---------------------DELIVERANDINFOSECTION------X---------------------- -->
+    <!-- ----------------------------------FOOTER-------------------------------------------- -->
+    <footer class="padding-x">
+        <div class="cards">
+            <div class="card">
+                <h2>Юридическая информация</h2>
+                <p>Интернет-магазин зарегистрирован в Торговом реестре Республики Беларусь №294730 от 20.11.2015. ИП
+                    Бессмертный Иван Геннадьевич СоГР №790957672 от 13.04.2015 выдано Могилевским райисполкомом.
+                </p>
+                <p>Юр.адрес: 213134, Могилевская обл., Могилевский р-н, аг. Буйничи, пер. 2-ой Речной 18</p>
+                <div class="img-group">
+                    <a href="#">
+                        <div class="icon1"><i class="fa-brands fa-vk"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon1"><i class="fa-brands fa-youtube"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon1"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Способы оплаты</h2>
+                <div class="namecards">
+                    <div class="cardname"><img src="img/footer/visa.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/mastercard.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/belkart.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/visa.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/mastercard.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/belkart.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/visa.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/mastercard.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/belkart.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/visa.svg" alt=""></div>
+                </div>
+                <a href="#">Подробнее о способах оплаты</a>
+            </div>
+            <div class="card">
+                <h2>Карты рассрочки</h2>
+                <div class="namecards">
+                    <div class="cardname"><img src="img/footer/kartapokupok.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/xalva.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/smartkarta.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/cerepaxa.svg" alt=""></div>
+                    <div class="cardname"><img src="img/footer/maqnit.svg" alt=""></div>
+                    <a href="#">Подробнее о картах рассрочки</a>
+                </div>
+            </div>
+    </footer>
+    <!-- ----------------------------------FOOTER-------------------------------------------- -->
+    <!-- ---------------------------------- COPYRIGHT---------------------------------------- -->
+    <div class="copyright">
+        <p>Copyright © 2015-2020 Rembini | Все права защищены.</p>
+    </div>
+    <!-- -----------------------------------COPYRIGHT---------------------------------------- -->
+
+
+
+    <!------------------------------------ JAVASCRIPT ------------------------------------------>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="js/all.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/basket.js"></script>
+    <script> const swiper1 = new Swiper('.productSlide', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            //pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        })</script>
+    <!----------------X------------------- JAVASCRIPT -----------------------X------------------>
+
+</body>
+
+</html>
+
+

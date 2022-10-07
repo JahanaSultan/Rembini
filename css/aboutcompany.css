@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+:root {
+  --darkGold: #88543e;
+  --brown: #311e19;
+  --goldYellow: #eeb256;
+  --beige: #f0efed;
+  --lightBrown: #90604c;
+  --grey: #e2e0df;
+}
+
+#advantages {
+  background-color: #3b4355;
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+#advantages h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 51px;
+}
+#advantages .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#advantages .cards .border {
+  width: 19%;
+  height: 220px;
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 40px;
+}
+#advantages .cards .border .card {
+  border: 1px solid #311e1915;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#advantages .cards .border .card p {
+  text-align: center;
+  color: var(--brown);
+  margin-top: 25px;
+}
+#advantages .cards .border .card .icon {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4c4c433;
+}
+
+#shoppingmetod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+#shoppingmetod .left {
+  width: 51%;
+}
+#shoppingmetod .right {
+  width: 44%;
+  background-color: var(--darkGold);
+  padding: 17px 25px;
+}
+#shoppingmetod .left h1 span {
+  color: var(--darkGold);
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+}
+#shoppingmetod .left h1 {
+  margin-bottom: 35px;
+  color: var(--brown);
+}
+#shoppingmetod .left p:first-of-type {
+  margin-bottom: 15px;
+}
+#shoppingmetod .left p {
+  color: var(--brown);
+}
+#shoppingmetod .right h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 13px;
+}
+#shoppingmetod .right .online, #shoppingmetod .right .adress{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 17px 15px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+#shoppingmetod .right .online img, #shoppingmetod .right .adress img{
+    margin-right: 15px;
+}
+#shoppingmetod .right .adress{
+    background-color: #fff;
+    color: var(--brown);
+}
+#shoppingmetod .right .online{
+    background-color: var(--goldYellow);
+    margin-bottom: 35px;
+}
+@media screen and (max-width: 1026px) {
+}
+@media screen and (max-width: 926px) {
+  #advantages .cards .border {
+    width: 24%;
+  }
+  #shoppingmetod{
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  #shoppingmetod .left{
+      width: 100%;
+  }
+  #shoppingmetod .right{
+      width: 100%;
+      margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #advantages .cards .border {
+    width: 32%;
+    height: 231px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #advantages .cards .border {
+    width: 49%;
+  }
+}
