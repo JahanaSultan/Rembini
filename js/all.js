@@ -54,7 +54,7 @@ products = [
       'img/PRODUCTS/sumka3.jpg',
     ],
     status: 'Новинка',
-    sale: 60,
+    sale: '',
     rating: 'ХИТ!',
     color: 'Темно-коричневый',
     brand: 'Rembini',

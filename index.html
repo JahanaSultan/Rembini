@@ -566,9 +566,14 @@
     <script src="js/all.js"></script>
     <script src="js/main.js"></script>
     <script>
+          var direct='vertical'
+        if (window.innerWidth <= 926) {
+          direct='horizontal'
+        }
+
         const swiper = new Swiper('#header-slider', {
             // Optional parameters
-            direction: 'vertical',
+            direction: direct,
             loop: true,
 
             //pagination

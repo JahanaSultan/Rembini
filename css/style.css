@@ -755,8 +755,7 @@ header .swiper-button-next::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 32px;
   margin-bottom: 36px;
 }
 #whyus .cards .card:hover{
@@ -912,6 +911,7 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .item-cards .item-card .cardfooter {
   display: flex;
@@ -1577,8 +1577,9 @@ footer .cards .card:not(:first-child) a {
   #in-social-media .swiper-horizontal > .swiper-pagination-bullets,
   #in-social-media .swiper-pagination-bullets.swiper-pagination-horizontal,
   #in-social-media .swiper-pagination-custom,
-  #in-social-media .swiper-pagination-fraction {
-    top: unset;
+  #in-social-media .swiper-pagination-fraction,
+  #in-social-media .slide #socialMedia .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: unset!important;
     bottom: -14% !important;
     left: 50%;
     transform: translateX(-50%);
@@ -1671,5 +1672,12 @@ footer .cards .card:not(:first-child) a {
   }
 }
 @media screen and (max-width: 500px) {
+  .item-cards .item-card h2{
+    font-size: 14px;
+  }
+  #items .item-cards .item-card{
+   width: 98%;
+   height: 450px;
+  }
 }
 /*--------------X------------------ MEDIAQUERIES-------------------X--------------- */
