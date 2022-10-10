@@ -191,5 +191,20 @@ resetFilter.addEventListener('click', () => {
     getitemcard1()
 })
 
+// Filter in mobile
+
+let filterbtn=document.querySelector(".heading .right .filter")
+let filterside=document.querySelector("#search-page .left")
+let transform=document.querySelector("#search-page .left .transform")
+if (window.innerWidth <= 926){
+  filterbtn.style.cursor="pointer"
+  filterbtn.addEventListener("click",()=>{
+    filterside.style.transform="translateX(0)"
+  })
+  transform.addEventListener("click",()=>{
+  filterside.style.transform="translateX(-100%)"
+})
+  }
+
 
 

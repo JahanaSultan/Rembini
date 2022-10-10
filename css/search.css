@@ -356,7 +356,33 @@
 }
 @media screen and (max-width: 926px) {
   #search-page .left {
-    display: none;
+    transform: translateX(-100%);
+    position:fixed;
+    top: 70px;
+    left: 0;
+    width: 80%;
+    height: calc(100vh);
+    background-color: #fff;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    border: 1px solid gray;
+    padding-bottom: 100px;
+  }
+  #search-page .left .transform{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #search-page .left .transform i{
+    color: red;
   }
   #search-page .right {
     width: 100%;
